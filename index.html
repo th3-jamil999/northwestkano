@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWU Student Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mmg {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .nw {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: rgb(16, 112, 112);
+            padding: 15px;
+        }
+
+        .nw h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: white;
+        }
+
+        .menu {
+            margin-bottom: 20px;
+            background-color: black;
+            padding: 10px;
+        }
+
+        .gh h3 {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            color: white;
+        }
+
+        .sp {
+            margin-bottom: 30px;
+            background-color: rgb(16, 112, 112);
+            padding: 10px;
+        }
+
+        .kl h3 {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            color: white;
+        }
+
+        .aa {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .e {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 600px;
+            height: 45px;
+            padding: 0 20px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: rgb(21, 207, 21);
+        }
+
+        button {
+            width: 100%;
+            max-width: 600px;
+            height: 45px;
+            background-color: rgb(21, 207, 21);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(18, 180, 18);
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .forgot-password {
+            color: rgb(92, 92, 231);
+            text-align: right;
+            margin-top: 15px;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            cursor: pointer;
+            max-width: 600px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        .footer-bar-1 {
+            height: 20px;
+            background-color: rgb(16, 112, 112);
+        }
+
+        .footer-bar-2 {
+            height: 40px;
+            background-color: black;
+        }
+
+        .footer-copyright {
+            height: auto;
+            min-height: 40px;
+            background-color: rgb(16, 112, 112);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: clamp(0.75rem, 2vw, 0.9rem);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .mmg {
+                padding: 15px;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            button,
+            a {
+                max-width: 100%;
+            }
+
+            .forgot-password {
+                text-align: center;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nw h2 {
+                font-size: 1.3rem;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                height: 40px;
+                font-size: 14px;
+            }
+
+            button {
+                height: 42px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mmg">
+        <div class="nw">
+            <h2>Northwest University, Kano</h2>
+        </div>
+        <div class="menu">
+            <div class="gh">
+                <h3>MENU</h3>
+            </div>
+        </div>
+        <div class="sp">
+            <div class="kl">
+                <h3>Students' Portal</h3>
+            </div>
+        </div>
+
+        <div class="aa">
+            Account authentication
+        </div>
+        
+        <div class="e">
+            Email:
+        </div>
+        <div>
+            <input required type="email" placeholder="example@nwu.edu.ng">
+        </div>
+
+        <div class="e">
+            Password:
+        </div>
+        <div>
+            <input required type="password" placeholder="Password">
+        </div>
+
+        <div>
+            <a href="db.html">
+                <button>Login</button>
+            </a>
+        </div>
+
+        <div class="forgot-password">
+            Forgot your password?
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bar-1"></div>
+        <div class="footer-bar-2"></div>
+        <div class="footer-copyright">
+            Copyright 2012-2025 NWU, Kano. All rights reserved. Powered by ICT
+        </div>
+    </footer>
+</body>
+</html>

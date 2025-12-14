@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - NWU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid rgb(16, 112, 112);
+        }
+
+        .student-info {
+            margin-bottom: 30px;
+            line-height: 1.8;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .student-info p {
+            margin: 5px 0;
+        }
+
+        .courses-table {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        .table-header {
+            background-color: grey;
+            color: white;
+            height: 70px;
+            font-weight: bold;
+        }
+
+        .table-header th {
+            padding: 15px 10px;
+            text-align: left;
+            font-size: clamp(0.85rem, 1.5vw, 1rem);
+        }
+
+        .table-row {
+            height: 70px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-row:nth-child(even) {
+            background-color: grey;
+            color: white;
+        }
+
+        .table-row:nth-child(odd) {
+            background-color: white;
+        }
+
+        .table-row td {
+            padding: 15px 10px;
+            font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .courses-table {
+                overflow-x: scroll;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .table-header th,
+            .table-row td {
+                padding: 10px 8px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .student-info {
+                font-size: 0.9rem;
+            }
+
+            .table-header th,
+            .table-row td {
+                padding: 8px 5px;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="nw.jpeg" alt="Student Photo" class="profile-img">
+
+        <div class="student-info">
+            <strong>Name:</strong> Muhammed Usman
+            <p><strong>Admission Number:</strong> UG24INT1150</p>
+            <p><strong>Program name:</strong> International Relations</p>
+            <p><strong>Current session:</strong> 2024/2025</p>
+        </div>
+
+        <div class="courses-table">
+            <table>
+                <thead>
+                    <tr class="table-header">
+                        <th>Course</th>
+                        <th>Course Title</th>
+                        <th>Credit</th>
+                        <th>Session</th>
+                        <th>Semester</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>GST 111</td>
+                        <td>Communication in English</td>
+                        <td>1</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>IRS 109</td>
+                        <td>Introduction To Political Science</td>
+                        <td>2</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>IRS 111</td>
+                        <td>Introduction to International Studies</td>
+                        <td>2</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>IRS 107</td>
+                        <td>Introduction to International Relations</td>
+                        <td>1</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>IRS 103</td>
+                        <td>Introduction African Politics</td>
+                        <td>1</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>IRS 101</td>
+                        <td>Ancestors of the contemporary systems</td>
+                        <td>1</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>IRS 105</td>
+                        <td>History Of Nigeria</td>
+                        <td>1</td>
+                        <td>2024/2025</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

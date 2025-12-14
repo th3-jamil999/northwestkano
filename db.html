@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details - NWU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .university-logo {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 3px solid rgb(16, 112, 112);
+        }
+
+        .og {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .student-photo {
+            height: 100px;
+            width: auto;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        .details {
+            flex: 1;
+            min-width: 250px;
+            line-height: 2;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .details-row {
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: 500;
+            min-width: 180px;
+            color: #333;
+        }
+
+        .value {
+            color: #555;
+        }
+
+        .course-reg-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: greenyellow;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .course-reg-btn:hover {
+            background-color: #c5ff00;
+            transform: translateY(-2px);
+        }
+
+        .course-reg-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .university-logo {
+                width: 120px;
+            }
+
+            .og {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .student-photo {
+                height: 80px;
+            }
+
+            .label {
+                min-width: 150px;
+                font-size: 0.85rem;
+            }
+
+            .value {
+                font-size: 0.85rem;
+            }
+
+            .details-row {
+                flex-direction: column;
+                margin-bottom: 12px;
+            }
+
+            .course-reg-btn {
+                width: 100%;
+                text-align: center;
+                padding: 12px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .university-logo {
+                width: 100px;
+            }
+
+            .student-photo {
+                height: 70px;
+            }
+
+            .details {
+                font-size: 0.85rem;
+                line-height: 1.8;
+            }
+
+            .label {
+                min-width: 120px;
+                font-size: 0.8rem;
+            }
+
+            .value {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="nw.jpeg" alt="Northwest University Logo" class="university-logo">
+
+        <div class="og">
+            <div>
+                <img src="imkolo.jpg" alt="Student Photo" class="student-photo">
+            </div>
+
+            <div class="details">
+                <div class="details-row">
+                    <span class="label">UTME REG NO:</span>
+                    <span class="value">202441987770DF</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Full Name:</span>
+                    <span class="value">Muhammad Usman</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Course Of Study:</span>
+                    <span class="value">History and International Studies</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Program:</span>
+                    <span class="value">BA History and International Studies</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Session:</span>
+                    <span class="value">2024/2025</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Level:</span>
+                    <span class="value">100 level</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Total Amount To be paid:</span>
+                    <span class="value">₦20,000.00</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Payment Reference:</span>
+                    <span class="value">456453276838</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="imam.html" class="course-reg-btn">
+            Course REG
+        </a>
+    </div>
+</body>
+</html>
